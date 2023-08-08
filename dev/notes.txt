@@ -1,0 +1,14 @@
+- x create all pages
+	PreislistePR3
+	BedarfsrechnerPR3
+	KampfPR3
+	SchiffePR3
+	BedarfsrechnerP4
+	AboutPR3
+- x create PreislistePR3 page
+	- x import json
+	- x mock show import 
+- .. create BedarfsrechnerPR3 page
+	- x create mock click to alert
+	- create state variables for anzahl and volleTage and show
+
