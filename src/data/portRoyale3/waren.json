@@ -3,7 +3,7 @@
     "name": "Holz",
     "ankauf": 39,
     "verkauf": 60,
-    "bd": 0.0013333,
+    "bedarf": 0.0013333,
     "herstadt": [
       "Belize",
       "Biloxi",
@@ -29,7 +29,7 @@
     "name": "Ziegel",
     "ankauf": 39,
     "verkauf": 60,
-    "bd": 0.00270588,
+    "bedarf": 0.00270588,
     "herstadt": [
       "Antigua",
       "Campeche",
@@ -55,7 +55,7 @@
     "name": "Weizen",
     "ankauf": 39,
     "verkauf": 60,
-    "bd": 0.00270588,
+    "bedarf": 0.00270588,
     "herstadt": [
       "Andross",
       "Caracas",
@@ -81,7 +81,7 @@
     "name": "Früchte",
     "ankauf": 60,
     "verkauf": 90,
-    "bd": 0.00217647,
+    "bedarf": 0.00217647,
     "herstadt": [
       "Andross",
       "Antigua",
@@ -107,7 +107,7 @@
     "name": "Mais",
     "ankauf": 60,
     "verkauf": 90,
-    "bd": 0.0010588,
+    "bedarf": 0.0010588,
     "herstadt": [
       "Belize",
       "Biloxi",
@@ -133,7 +133,7 @@
     "name": "Zucker",
     "ankauf": 60,
     "verkauf": 90,
-    "bd": 0.0010588,
+    "bedarf": 0.0010588,
     "herstadt": [
       "Cancun",
       "Cartagena",
@@ -159,7 +159,7 @@
     "name": "Hanf",
     "ankauf": 60,
     "verkauf": 90,
-    "bd": 0.0010588,
+    "bedarf": 0.0010588,
     "herstadt": [
       "Cat Island",
       "Cayman",
@@ -185,7 +185,7 @@
     "name": "Tuch",
     "ankauf": 180,
     "verkauf": 270,
-    "bd": 0.0005294,
+    "bedarf": 0.0005294,
     "herstadt": [
       "Antigua",
       "Barbados",
@@ -211,7 +211,7 @@
     "name": "Metall",
     "ankauf": 99,
     "verkauf": 150,
-    "bd": 0.0005294,
+    "bedarf": 0.0005294,
     "herstadt": [
       "Barbados",
       "Belize",
@@ -237,7 +237,7 @@
     "name": "Baumwolle",
     "ankauf": 60,
     "verkauf": 90,
-    "bd": 0.0010588,
+    "bedarf": 0.0010588,
     "herstadt": [
       "Andross",
       "Coro",
@@ -260,10 +260,10 @@
     ]
   },
   {
-    "name": "Werkzeug",
+    "name": "Metallwaren",
     "ankauf": 240,
     "verkauf": 360,
-    "bd": 0.0005294,
+    "bedarf": 0.0005294,
     "herstadt": [
       "Caracas",
       "Cayman",
@@ -278,10 +278,10 @@
     ]
   },
   {
-    "name": "Färbemittel",
+    "name": "Farbstoffe",
     "ankauf": 120,
     "verkauf": 180,
-    "bd": 0.0002352,
+    "bedarf": 0.0002352,
     "herstadt": [
       "Biloxi",
       "Charleston",
@@ -299,7 +299,7 @@
     "name": "Kaffee",
     "ankauf": 168,
     "verkauf": 252,
-    "bd": 0.0005294,
+    "bedarf": 0.0005294,
     "herstadt": [
       "Belize",
       "Campeche",
@@ -320,7 +320,7 @@
     "name": "Kakao",
     "ankauf": 168,
     "verkauf": 252,
-    "bd": 0.0005294,
+    "bedarf": 0.0005294,
     "herstadt": [
       "Antigua",
       "Barbados",
@@ -344,7 +344,7 @@
     "name": "Tabak",
     "ankauf": 120,
     "verkauf": 180,
-    "bd": 0.0005294,
+    "bedarf": 0.0005294,
     "herstadt": [
       "Andross",
       "Cat Island",
@@ -373,7 +373,7 @@
     "name": "Fleisch",
     "ankauf": 360,
     "verkauf": 540,
-    "bd": 0.0005294,
+    "bedarf": 0.0005294,
     "herstadt": [
       "Campeche",
       "Cartagena",
@@ -391,7 +391,7 @@
     "name": "Kleidung",
     "ankauf": 540,
     "verkauf": 810,
-    "bd": 0.0005294,
+    "bedarf": 0.0005294,
     "herstadt": [
       "Belize",
       "Coro",
@@ -409,7 +409,7 @@
     "name": "Seil",
     "ankauf": 180,
     "verkauf": 270,
-    "bd": 0.0010588,
+    "bedarf": 0.0010588,
     "herstadt": [
       "Andross",
       "Antigua",
@@ -427,7 +427,7 @@
     "name": "Rum",
     "ankauf": 320,
     "verkauf": 480,
-    "bd": 0.0005294,
+    "bedarf": 0.0005294,
     "herstadt": [
       "Cat Island",
       "Charles Towne",
@@ -445,7 +445,7 @@
     "name": "Backwaren",
     "ankauf": 170,
     "verkauf": 255,
-    "bd": 0.0010588,
+    "bedarf": 0.0010588,
     "herstadt": [
       "Biloxi",
       "Gibara",
