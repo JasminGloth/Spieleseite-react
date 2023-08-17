@@ -1,128 +1,9 @@
 import waren from '../data/portRoyale3/waren.json';
 import { useState } from 'react';
 
-/* -------------------- Holz --------------------*/
-const _bedarfholz = waren.find((m) => m.name === 'Holz')?.bedarf;
-const bedarfholz = _bedarfholz ? _bedarfholz : 0;
-const _profitholz = waren.find((m) => m.name === 'Holz')?.verkauf;
-const profitholz = _profitholz ? _profitholz : 0;
-
-/* -------------------- Ziegel --------------------*/
-const _bedarfziegel = waren.find((m) => m.name === 'Ziegel')?.bedarf;
-const bedarfziegel = _bedarfziegel ? _bedarfziegel : 0;
-const _profitziegel = waren.find((m) => m.name === 'Ziegel')?.verkauf;
-const profitziegel = _profitziegel ? _profitziegel : 0;
-
-/* -------------------- Weizen --------------------*/
-const _bedarfweizen = waren.find((m) => m.name === 'Weizen')?.bedarf;
-const bedarfweizen = _bedarfweizen ? _bedarfweizen : 0;
-const _profitweizen = waren.find((m) => m.name === 'Weizen')?.verkauf;
-const profitweizen = _profitweizen ? _profitweizen : 0;
-
-/* -------------------- Früchte --------------------*/
-const _bedarffrüchte = waren.find((m) => m.name === 'Früchte')?.bedarf;
-const bedarffrüchte = _bedarffrüchte ? _bedarffrüchte : 0;
-const _profitfrüchte = waren.find((m) => m.name === 'Früchte')?.verkauf;
-const profitfrüchte = _profitfrüchte ? _profitfrüchte : 0;
-
-/* -------------------- Mais --------------------*/
-const _bedarfmais = waren.find((m) => m.name === 'Mais')?.bedarf;
-const bedarfmais = _bedarfmais ? _bedarfmais : 0;
-const _profitmais = waren.find((m) => m.name === 'Mais')?.verkauf;
-const profitmais = _profitmais ? _profitmais : 0;
-
-/* -------------------- Zucker --------------------*/
-const _bedarfzucker = waren.find((m) => m.name === 'Zucker')?.bedarf;
-const bedarfzucker = _bedarfzucker ? _bedarfzucker : 0;
-const _profitzucker = waren.find((m) => m.name === 'Zucker')?.verkauf;
-const profitzucker = _profitzucker ? _profitzucker : 0;
-
-/* -------------------- Hanf --------------------*/
-const _bedarfhanf = waren.find((m) => m.name === 'Hanf')?.bedarf;
-const bedarfhanf = _bedarfhanf ? _bedarfhanf : 0;
-const _profithanf = waren.find((m) => m.name === 'Hanf')?.verkauf;
-const profithanf = _profithanf ? _profithanf : 0;
-
-/* -------------------- Tuch --------------------*/
-const _bedarftuch = waren.find((m) => m.name === 'Tuch')?.bedarf;
-const bedarftuch = _bedarftuch ? _bedarftuch : 0;
-const _profittuch = waren.find((m) => m.name === 'Tuch')?.verkauf;
-const profittuch = _profittuch ? _profittuch : 0;
-
-/* -------------------- Metall --------------------*/
-const _bedarfmetall = waren.find((m) => m.name === 'Metall')?.bedarf;
-const bedarfmetall = _bedarfmetall ? _bedarfmetall : 0;
-const _profitmetall = waren.find((m) => m.name === 'Metall')?.verkauf;
-const profitmetall = _profitmetall ? _profitmetall : 0;
-
-/* -------------------- Baumwolle --------------------*/
-const _bedarfbaumwolle = waren.find((m) => m.name === 'Baumwolle')?.bedarf;
-const bedarfbaumwolle = _bedarfbaumwolle ? _bedarfbaumwolle : 0;
-const _profitbaumwolle = waren.find((m) => m.name === 'Baumwolle')?.verkauf;
-const profitbaumwolle = _profitbaumwolle ? _profitbaumwolle : 0;
-
-/* -------------------- Metallwaren --------------------*/
-const _bedarfmetallwaren = waren.find((m) => m.name === 'Metallwaren')?.bedarf;
-const bedarfmetallwaren = _bedarfmetallwaren ? _bedarfmetallwaren : 0;
-const _profitmetallwaren = waren.find((m) => m.name === 'Metallwaren')?.verkauf;
-const profitmetallwaren = _profitmetallwaren ? _profitmetallwaren : 0;
-
-/* -------------------- Farbstoffe --------------------*/
-const _bedarffarbstoffe = waren.find((m) => m.name === 'Farbstoffe')?.bedarf;
-const bedarffarbstoffe = _bedarffarbstoffe ? _bedarffarbstoffe : 0;
-const _profitfarbstoffe = waren.find((m) => m.name === 'Farbstoffe')?.verkauf;
-const profitfarbstoffe = _profitfarbstoffe ? _profitfarbstoffe : 0;
 
 
-/* -------------------- Kaffee --------------------*/
-const _bedarfkaffee = waren.find((m) => m.name === 'Kaffee')?.bedarf;
-const bedarfkaffee = _bedarfkaffee ? _bedarfkaffee : 0;
-const _profitkaffee = waren.find((m) => m.name === 'Kaffee')?.verkauf;
-const profitkaffee = _profitkaffee ? _profitkaffee : 0;
-
-/* -------------------- Kakao --------------------*/
-const _bedarfkakao = waren.find((m) => m.name === 'Kakao')?.bedarf;
-const bedarfkakao = _bedarfkakao ? _bedarfkakao : 0;
-const _profitkakao = waren.find((m) => m.name === 'Kakao')?.verkauf;
-const profitkakao = _profitkakao ? _profitkakao : 0;
-
-/* -------------------- Tabak --------------------*/
-const _bedarftabak = waren.find((m) => m.name === 'Tabak')?.bedarf;
-const bedarftabak = _bedarftabak ? _bedarftabak : 0;
-const _profittabak = waren.find((m) => m.name === 'Tabak')?.verkauf;
-const profittabak = _profittabak ? _profittabak : 0;
-
-/* -------------------- Fleisch --------------------*/
-const _bedarffleisch = waren.find((m) => m.name === 'Fleisch')?.bedarf;
-const bedarffleisch = _bedarffleisch ? _bedarffleisch : 0;
-const _profitfleisch = waren.find((m) => m.name === 'Fleisch')?.verkauf;
-const profitfleisch = _profitfleisch ? _profitfleisch : 0;
-
-/* -------------------- Kleidung --------------------*/
-const _bedarfkleidung = waren.find((m) => m.name === 'Kleidung')?.bedarf;
-const bedarfkleidung = _bedarfkleidung ? _bedarfkleidung : 0;
-const _profitkleidung = waren.find((m) => m.name === 'Kleidung')?.verkauf;
-const profitkleidung = _profitkleidung ? _profitkleidung : 0;
-
-/* -------------------- Seil --------------------*/
-const _bedarfseil = waren.find((m) => m.name === 'Seil')?.bedarf;
-const bedarfseil = _bedarfseil ? _bedarfseil : 0;
-const _profitseil = waren.find((m) => m.name === 'Seil')?.verkauf;
-const profitseil = _profitseil ? _profitseil : 0;
-
-/* -------------------- Rum --------------------*/
-const _bedarfrum = waren.find((m) => m.name === 'Rum')?.bedarf;
-const bedarfrum = _bedarfrum ? _bedarfrum : 0;
-const _profitrum = waren.find((m) => m.name === 'Rum')?.verkauf;
-const profitrum = _profitrum ? _profitrum : 0;
-
-{/* -------------------- Backwaren --------------------*/}
-const _bedarfbackwaren = waren.find((m) => m.name === 'Backwaren')?.bedarf;
-const bedarfbackwaren = _bedarfbackwaren ? _bedarfbackwaren : 0;
-const _profitbackwaren = waren.find((m) => m.name === 'Backwaren')?.verkauf;
-const profitbackwaren = _profitbackwaren ? _profitbackwaren : 0;
-
-export const PageBedarfsrechnerPR3 = () => {
+export const PageBedarfsrechnerPR3Model = () => {
 	const [anzahl, setAnzahl] = useState(0);
 	const [tage, setTage] = useState(0);
 
@@ -139,6 +20,17 @@ export const PageBedarfsrechnerPR3 = () => {
 			setTage(_tage);
 		}
 	};
+
+	let konvoi = 0;
+	let allprofit =0;
+
+	const data = waren.map((ware) => {
+		const bedarf = Math.round(anzahl * ware.bedarf * tage);
+		const profit = bedarf * ware.verkauf;
+		konvoi += bedarf;
+		allprofit += profit
+		return { name: ware.name, bedarf, profit };
+	});
 
 	const handleClear= () => {
 		setAnzahl(0);
@@ -202,12 +94,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-holz">
-									{Math.round(anzahl * bedarfholz * tage)}
+									{
+										data.find((m) => m.name === 'Holz')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-holz">
-									{Math.round(Math.round(
-										anzahl * bedarfholz * tage) * profitholz
-									)}
+									{
+										data.find((m) => m.name === 'Holz')
+											?.profit
+									}
 								</td>
 
 								{/* -------------------- Metallwaren --------------------*/}
@@ -224,17 +120,18 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-metallwaren">
-									{Math.round(
-										anzahl * bedarfmetallwaren * tage
-									)}
+									{
+										data.find(
+											(m) => m.name === 'Metallwaren'
+										)?.bedarf
+									}
 								</td>
 								<td className="profit-metallwaren">
-									{Math.round(Math.round(
-										anzahl *
-											bedarfmetallwaren *
-											tage) *
-											profitmetallwaren
-									)}
+									{
+										data.find(
+											(m) => m.name === 'Metallwaren'
+										)?.profit
+									}
 								</td>
 							</tr>
 							<tr>
@@ -252,10 +149,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-ziegel">
-									{Math.round(anzahl * bedarfziegel * tage)}
+									{
+										data.find((m) => m.name === 'Ziegel')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-ziegel">
-									{Math.round(Math.round(anzahl * bedarfziegel * tage) * profitziegel)}
+									{
+										data.find((m) => m.name === 'Ziegel')
+											?.profit
+									}
 								</td>
 
 								{/* -------------------- Farbstoffe --------------------*/}
@@ -272,20 +175,21 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-farbstoffe">
-									{Math.round(
-										anzahl * bedarffarbstoffe * tage
-									)}
+									{
+										data.find(
+											(m) => m.name === 'Farbstoffe'
+										)?.bedarf
+									}
 								</td>
 								<td className="profit-farbstoffe">
-									{Math.round(Math.round(
-										anzahl *
-											bedarffarbstoffe *
-											tage) *
-											profitfarbstoffe
-									)}
+									{
+										data.find(
+											(m) => m.name === 'Farbstoffe'
+										)?.profit
+									}
 								</td>
 								<td>Profit</td>
-								<td className="all-profit">0</td>
+								<td className="all-profit">{allprofit}</td>
 							</tr>
 							<tr>
 								{/* -------------------- Weizen --------------------*/}
@@ -302,15 +206,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-weizen">
-									{Math.round(anzahl * bedarfweizen * tage)}
+									{
+										data.find((m) => m.name === 'Weizen')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-weizen">
-									{Math.round(Math.round(
-										anzahl *
-											bedarfweizen *
-											tage) *
-											profitweizen
-									)}
+									{
+										data.find((m) => m.name === 'Weizen')
+											?.profit
+									}
 								</td>
 
 								{/* -------------------- Kaffee --------------------*/}
@@ -327,15 +232,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-kaffee">
-									{Math.round(anzahl * bedarfkaffee * tage)}
+									{
+										data.find((m) => m.name === 'Kaffee')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-kaffee">
-									{Math.round(Math.round(
-										anzahl *
-											bedarfkaffee *
-											tage) *
-											profitkaffee
-									)}
+									{
+										data.find((m) => m.name === 'Kaffee')
+											?.profit
+									}
 								</td>
 							</tr>
 							<tr>
@@ -353,15 +259,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-früchte">
-									{Math.round(anzahl * bedarffrüchte * tage)}
+									{
+										data.find((m) => m.name === 'Früchte')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-früchte">
-									{Math.round(Math.round(
-										anzahl *
-											bedarffrüchte *
-											tage) *
-											profitfrüchte
-									)}
+									{
+										data.find((m) => m.name === 'Früchte')
+											?.profit
+									}
 								</td>
 
 								{/* -------------------- Kakao --------------------*/}
@@ -378,18 +285,19 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-kakao">
-									{Math.round(anzahl * bedarfkakao * tage)}
+									{
+										data.find((m) => m.name === 'Kakao')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-kakao">
-									{Math.round(Math.round(
-										anzahl *
-											bedarfkakao *
-											tage) *
-											profitkakao
-									)}
+									{
+										data.find((m) => m.name === 'Kakao')
+											?.profit
+									}
 								</td>
 								<td>Konvoigröße</td>
-								<td className="konvoi">0</td>
+								<td className="konvoi">{konvoi}</td>
 							</tr>
 							<tr>
 								{/* -------------------- Mais --------------------*/}
@@ -404,12 +312,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-mais">
-									{Math.round(anzahl * bedarfmais * tage)}
+									{
+										data.find((m) => m.name === 'Mais')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-mais">
-									{Math.round(Math.round(
-										anzahl * bedarfmais * tage) * profitmais
-									)}
+									{
+										data.find((m) => m.name === 'Mais')
+											?.profit
+									}
 								</td>
 
 								{/* -------------------- Tabak --------------------*/}
@@ -426,15 +338,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-tabak">
-									{Math.round(anzahl * bedarftabak * tage)}
+									{
+										data.find((m) => m.name === 'Tabak')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-tabak">
-									{Math.round(Math.round(
-										anzahl *
-											bedarftabak *
-											tage) *
-											profittabak
-									)}
+									{
+										data.find((m) => m.name === 'Tabak')
+											?.profit
+									}
 								</td>
 							</tr>
 							<tr>
@@ -452,15 +365,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-zucker">
-									{Math.round(anzahl * bedarfzucker * tage)}
+									{
+										data.find((m) => m.name === 'Zucker')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-zucker">
-									{Math.round(Math.round(
-										anzahl *
-											bedarfzucker *
-											tage) *
-											profitzucker
-									)}
+									{
+										data.find((m) => m.name === 'Zucker')
+											?.profit
+									}
 								</td>
 
 								{/* -------------------- Fleisch --------------------*/}
@@ -477,15 +391,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-fleisch">
-									{Math.round(anzahl * bedarffleisch * tage)}
+									{
+										data.find((m) => m.name === 'Fleisch')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-fleisch">
-									{Math.round(Math.round(
-										anzahl *
-											bedarffleisch *
-											tage) *
-											profitfleisch
-									)}
+									{
+										data.find((m) => m.name === 'Fleisch')
+											?.profit
+									}
 								</td>
 							</tr>
 							<tr>
@@ -501,12 +416,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-hanf">
-									{Math.round(anzahl * bedarfhanf * tage)}
+									{
+										data.find((m) => m.name === 'Hanf')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-hanf">
-									{Math.round(Math.round(
-										anzahl * bedarfhanf * tage) * profithanf
-									)}
+									{
+										data.find((m) => m.name === 'Hanf')
+											?.profit
+									}
 								</td>
 
 								{/* -------------------- Kleidung --------------------*/}
@@ -523,15 +442,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-kleidung">
-									{Math.round(anzahl * bedarfkleidung * tage)}
+									{
+										data.find((m) => m.name === 'Kleidung')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-kleidung">
-									{Math.round(Math.round(
-										anzahl *
-											bedarfkleidung *
-											tage) *
-											profitkleidung
-									)}
+									{
+										data.find((m) => m.name === 'Kleidung')
+											?.profit
+									}
 								</td>
 							</tr>
 							<tr>
@@ -547,12 +467,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-tuch">
-									{Math.round(anzahl * bedarftuch * tage)}
+									{
+										data.find((m) => m.name === 'Tuch')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-tuch">
-									{Math.round(Math.round(
-										anzahl * bedarftuch * tage) * profittuch
-									)}
+									{
+										data.find((m) => m.name === 'Tuch')
+											?.profit
+									}
 								</td>
 
 								{/* -------------------- Seil --------------------*/}
@@ -567,12 +491,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-seil">
-									{Math.round(anzahl * bedarfseil * tage)}
+									{
+										data.find((m) => m.name === 'Seil')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-seil">
-									{Math.round(Math.round(
-										anzahl * bedarfseil * tage) * profitseil
-									)}
+									{
+										data.find((m) => m.name === 'Seil')
+											?.profit
+									}
 								</td>
 							</tr>
 							<tr>
@@ -590,15 +518,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-metall">
-									{Math.round(anzahl * bedarfmetall * tage)}
+									{
+										data.find((m) => m.name === 'Metall')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-metall">
-									{Math.round(Math.round(
-										anzahl *
-											bedarfmetall *
-											tage) *
-											profitmetall
-									)}
+									{
+										data.find((m) => m.name === 'Metall')
+											?.profit
+									}
 								</td>
 
 								{/* -------------------- Rum --------------------*/}
@@ -613,12 +542,10 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-rum">
-									{Math.round(anzahl * bedarfrum * tage)}
+									{data.find((m) => m.name === 'Rum')?.bedarf}
 								</td>
 								<td className="profit-rum">
-									{Math.round(Math.round(
-										anzahl * bedarfrum * tage) * profitrum
-									)}
+									{data.find((m) => m.name === 'Rum')?.profit}
 								</td>
 							</tr>
 							<tr>
@@ -636,17 +563,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-baumwolle">
-									{Math.round(
-										anzahl * bedarfbaumwolle * tage
-									)}
+									{
+										data.find((m) => m.name === 'Baumwolle')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-baumwolle">
-									{Math.round(Math.round(
-										anzahl *
-											bedarfbaumwolle *
-											tage) *
-											profitbaumwolle
-									)}
+									{
+										data.find((m) => m.name === 'Baumwolle')
+											?.profit
+									}
 								</td>
 
 								{/* -------------------- Backwaren --------------------*/}
@@ -663,17 +589,16 @@ export const PageBedarfsrechnerPR3 = () => {
 									</div>
 								</td>
 								<td className="bedarf-backwaren">
-									{Math.round(
-										anzahl * bedarfbackwaren * tage
-									)}
+									{
+										data.find((m) => m.name === 'Backwaren')
+											?.bedarf
+									}
 								</td>
 								<td className="profit-backwaren">
-									{Math.round(Math.round(
-										anzahl *
-											bedarfbackwaren *
-											tage) *
-											profitbackwaren
-									)}
+									{
+										data.find((m) => m.name === 'Backwaren')
+											?.profit
+									}
 								</td>
 							</tr>
 						</tbody>

@@ -12,3 +12,26 @@
 	- x create mock click to alert
 	- create state variables for anzahl and volleTage and show
 
+
+
+
+	bedarfHolz = {bedarf},
+	bedarfZiegel ={bedarf},
+	bedarfWeizen ={bedarf},
+	bedarfFrüchte ={bedarf},
+	bedarfMais:{bedarf},
+	bedarfZucker:{bedarf},
+	bedarfHanf:{bedarf},
+	bedarfTuch:{bedarf},
+	bedarfMetall:{bedarf},
+	bedarfBaumwolle:{bedarf},
+	bedarfMetallwaren:{bedarf},
+	bedarfFarbstoffe:{bedarf},
+	bedarfKaffee:{bedarf},
+	bedarfKakao:{bedarf},
+	bedarfTabak:{bedarf},
+	bedarfFleisch:{bedarf},
+	bedarfKleidung:{bedarf},
+	bedarfSeil:{bedarf},
+	bedarfRum:{bedarf},
+	bedarfBackwaren:{bedarf}
