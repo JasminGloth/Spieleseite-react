@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Holz",
+        "einkaufspreis": 0.02,
+        "verkaufspreis": 0.04
+    },
+    {
+        "name": "Steine",
+        "einkaufspreis": 0.01,
+        "verkaufspreis": 0.02
+    },
+    {
+        "name": "Metallfragmente",
+        "einkaufspreis": 0.05,
+        "verkaufspreis": 0.10
+    },
+    {
+        "name": "HQ",
+        "einkaufspreis": 2,
+        "verkaufspreis": 4
+    },
+    {
+        "name": "Scrap",
+        "einkaufspreis": 1,
+        "verkaufspreis": 2
+    },
+    {
+        "name": "Leder",
+        "einkaufspreis": 0.02,
+        "verkaufspreis": 0.04
+    },
+    {
+        "name": "Stoff",
+        "einkaufspreis": 0.01,
+        "verkaufspreis": 0.02
+    },
+    {
+        "name": "Schwefel",
+        "einkaufspreis": 0.05,
+        "verkaufspreis": 0.10
+    },
+    {
+        "name": "Holzkohle",
+        "einkaufspreis": 0.02,
+        "verkaufspreis": 0.04
+    },
+    {
+        "name": "Tierfett",
+        "einkaufspreis": 0.03,
+        "verkaufspreis": 0.06
+    },
+    {
+        "name": "Knochenfragmente",
+        "einkaufspreis": 0.01,
+        "verkaufspreis": 0.02
+    },
+    {
+        "name": "Einfacher Kraftstoff",
+        "einkaufspreis": 0.25,
+        "verkaufspreis": 0.50
+    }
+]

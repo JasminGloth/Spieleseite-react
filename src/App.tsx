@@ -7,6 +7,7 @@ import { PageSchiffePR3 } from './pages/PageSchiffePR3';
 import { PageAboutPR3 } from './pages/PageAboutPR3';
 import { PageBedarfsrechnerP4 } from './pages/PageBedarfsrechnerP4';
 import { PageBedarfsrechnerPR3Model } from './pages/PageBedarfsrechnerPR3Model';
+import { PageRustEconomieRechner } from './pages/PageRustEconomieRechner';
 
 
 function App() {
@@ -42,6 +43,14 @@ function App() {
 							</NavLink>
 						</div>
 					</li>
+					<li className='dropdown'>
+						<a href="#" className='dropbtn'>
+							Rust
+						</a>
+						<div className='dropdown-content'>
+							<NavLink to="/rusteconomierechner">Economierechner</NavLink>
+						</div>
+					</li>
 				</ul>
 			</nav>
 
@@ -62,6 +71,7 @@ function App() {
 					path="/bedarfsrechnerP4"
 					element={<PageBedarfsrechnerP4 />}
 				/>
+				<Route path='/rusteconomierechner' element={<PageRustEconomieRechner/>} />
 				<Route
 					path="/"
 					element={<Navigate to="/preislistePR3" replace />}
