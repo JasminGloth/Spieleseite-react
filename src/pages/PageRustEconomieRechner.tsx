@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import preise from "../data/rust/preise.json";
 
-export const PageRustEconomieRechner = () => {
+interface PreisItem {
+    name: string;
+    einkaufspreis: number;
+    verkaufspreis: number;
+}
+
+export const PageRustEconomieRechner: React.FC = () => {
     // Zustand für die Eingabewerte
-    const [values, setValues] = useState({});
+    const [values, setValues] = useState<Record<string, string>>({});
 
     // Funktion zum Aktualisieren der Werte
-    const handleChange = (name, value) => {
+    const handleChange = (name: string, value: string) => {
         setValues({
             ...values,
             [name]: value
@@ -14,8 +20,8 @@ export const PageRustEconomieRechner = () => {
     };
 
     // Berechnung des Gesamtpreises
-    const calculateTotalPrice = () => {
-        return preise.reduce((total, item) => {
+    const calculateTotalPrice = (): string => {
+        return preise.reduce((total, item: PreisItem) => {
             const quantity = values[item.name] ? parseFloat(values[item.name]) : 0;
             return total + (quantity * item.einkaufspreis);
         }, 0).toFixed(2); // auf 2 Dezimalstellen runden
@@ -30,7 +36,7 @@ export const PageRustEconomieRechner = () => {
         <div className="page pageRustEconomieRechner">
             <h1>Rust Ökonomie Rechner</h1>
             <form>
-                {preise.map(item => (
+                {preise.map((item: PreisItem) => (
                     <div key={item.name} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
                         <input 
                             type="number" 
