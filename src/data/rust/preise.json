@@ -3,72 +3,72 @@
         "name": "Holz",
         "einkaufspreis": 0.02,
         "verkaufspreis": 0.04,
-        "bild":"img/rust/wood.png"
+        "bild":"/img//rust/wood.png"
     },
     {
         "name": "Steine",
         "einkaufspreis": 0.01,
         "verkaufspreis": 0.02,
-        "bild":"img/rust/stones.png"
+        "bild":"/img//rust/stones.png"
     },
     {
         "name": "Metallfragmente",
         "einkaufspreis": 0.05,
         "verkaufspreis": 0.10,
-        "bild":"img/rust/metal.fragments.png"
+        "bild":"/img//rust/metal.fragments.png"
     },
     {
         "name": "HQ",
         "einkaufspreis": 2,
         "verkaufspreis": 4,
-        "bild":"img/rust/metal.refined.png"
+        "bild":"/img//rust/metal.refined.png"
     },
     {
         "name": "Scrap",
         "einkaufspreis": 1,
         "verkaufspreis": 2,
-        "bild":"img/rust/scrap.png"
+        "bild":"/img//rust/scrap.png"
     },
     {
         "name": "Leder",
         "einkaufspreis": 0.02,
         "verkaufspreis": 0.04,
-        "bild":"img/rust/leather.png"
+        "bild":"/img//rust/leather.png"
     },
     {
         "name": "Stoff",
         "einkaufspreis": 0.01,
         "verkaufspreis": 0.02,
-        "bild":"img/rust/cloth.png"
+        "bild":"/img//rust/cloth.png"
     },
     {
         "name": "Schwefel",
         "einkaufspreis": 0.05,
         "verkaufspreis": 0.10,
-        "bild":"img/rust/sulfur.png"
+        "bild":"/img//rust/sulfur.png"
     },
     {
         "name": "Holzkohle",
         "einkaufspreis": 0.02,
         "verkaufspreis": 0.04,
-        "bild":"img/rust/charcoal.png"
+        "bild":"/img//rust/charcoal.png"
     },
     {
         "name": "Tierfett",
         "einkaufspreis": 0.03,
         "verkaufspreis": 0.06,
-        "bild":"img/rust/fat.animal.png"
+        "bild":"/img//rust/fat.animal.png"
     },
     {
         "name": "Knochenfragmente",
         "einkaufspreis": 0.01,
         "verkaufspreis": 0.02,
-        "bild":"img/rust/bone.fragments.png"
+        "bild":"/img//rust/bone.fragments.png"
     },
     {
         "name": "Einfacher Kraftstoff",
         "einkaufspreis": 0.25,
         "verkaufspreis": 0.50,
-        "bild":"img/rust/lowgradefuel.png"
+        "bild":"/img//rust/lowgradefuel.png"
     }
 ]
