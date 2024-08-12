@@ -20,17 +20,21 @@ export const PageRustEconomieRechner: React.FC = () => {
     };
 
     // Berechnung des Gesamtpreises
-    const calculateTotalPrice = (): string => {
-        return preise.reduce((total, item: PreisItem) => {
+    const calculateTotalPrice = (): { einkaufsGesamt: number; verkaufsGesamt: number } => {
+        return preise.reduce((totals, item: PreisItem) => {
             const quantity = values[item.name] ? parseFloat(values[item.name]) : 0;
-            return total + (quantity * item.einkaufspreis);
-        }, 0).toFixed(2); // auf 2 Dezimalstellen runden
+            totals.einkaufsGesamt += quantity * item.einkaufspreis;
+            totals.verkaufsGesamt += quantity * item.verkaufspreis;
+            return totals;
+        }, { einkaufsGesamt: 0, verkaufsGesamt: 0 });
     };
 
     // Funktion zum Leeren der Felder
     const clearFields = () => {
         setValues({});
     };
+
+    const totals = calculateTotalPrice();
 
     return (
         <div className="page pageRustEconomieRechner">
@@ -51,7 +55,8 @@ export const PageRustEconomieRechner: React.FC = () => {
                     </div>
                 ))}
             </form>
-            <h2>Gesamtpreis: {calculateTotalPrice()} Coins</h2>
+            <h2>Gesamt Einkaufspreis: {totals.einkaufsGesamt.toFixed(2)} Coins</h2>
+            <h2>Gesamt Verkaufspreis: {totals.verkaufsGesamt.toFixed(2)} Coins</h2>
             <button onClick={clearFields} style={{ marginTop: '20px' }}>Felder leeren</button>
         </div>
     );
