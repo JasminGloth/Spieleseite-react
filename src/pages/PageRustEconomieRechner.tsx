@@ -5,13 +5,12 @@ interface PreisItem {
     name: string;
     einkaufspreis: number;
     verkaufspreis: number;
+    bild: string; // Bild-URL aus der JSON-Datei
 }
 
 export const PageRustEconomieRechner: React.FC = () => {
-    // Zustand für die Eingabewerte
     const [values, setValues] = useState<Record<string, string>>({});
 
-    // Funktion zum Aktualisieren der Werte
     const handleChange = (name: string, value: string) => {
         setValues({
             ...values,
@@ -19,7 +18,6 @@ export const PageRustEconomieRechner: React.FC = () => {
         });
     };
 
-    // Berechnung des Gesamtpreises
     const calculateTotalPrice = (): { einkaufsGesamt: number; verkaufsGesamt: number } => {
         return preise.reduce((totals, item: PreisItem) => {
             const quantity = values[item.name] ? parseFloat(values[item.name]) : 0;
@@ -29,7 +27,6 @@ export const PageRustEconomieRechner: React.FC = () => {
         }, { einkaufsGesamt: 0, verkaufsGesamt: 0 });
     };
 
-    // Funktion zum Leeren der Felder
     const clearFields = () => {
         setValues({});
     };
@@ -42,16 +39,20 @@ export const PageRustEconomieRechner: React.FC = () => {
             <form>
                 {preise.map((item: PreisItem) => (
                     <div key={item.name} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                        <img 
+                            src={item.bild} // Verwende den direkten Pfad zur Bilddatei
+                            alt={item.name} 
+                            style={{ width: '30px', height: '30px', marginRight: '10px' }} 
+                        />
                         <input 
                             type="number" 
                             min="0" 
                             step="any" 
                             placeholder={`Menge ${item.name}`} 
-                            value={values[item.name] || ''} // Wert aus dem Zustand setzen
+                            value={values[item.name] || ''} 
                             onChange={(e) => handleChange(item.name, e.target.value)} 
                             style={{ marginRight: '10px' }} 
                         />
-                        <label>{item.name}</label>
                     </div>
                 ))}
             </form>
