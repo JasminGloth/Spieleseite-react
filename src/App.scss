@@ -177,4 +177,10 @@ body {
 			opacity: 1;
 		}
 	}
+	.pageSchiffePR3 {
+		.shipgrid{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
 }

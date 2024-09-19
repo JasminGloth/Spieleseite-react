@@ -1,0 +1,238 @@
+[
+  {
+    "city": "Andross",
+    "waren": ["Weizen", "Früchte", "Tabak", "Seil", "Baumwolle"]
+  },
+  {
+    "city": "Antigua",
+    "waren": ["Ziegel", "Früchte", "Tuch", "Kakao", "Seil"]
+  },
+  {
+    "city": "Barbados",
+    "waren": ["Früchte", "Tuch", "Metalle", "Kakao", "Seil"]
+  },
+  {
+    "city": "Belize",
+    "waren": ["Holz", "Mais", "Metalle", "Kaffee", "Kleidung"]
+  },
+  {
+    "city": "Biloxi",
+    "waren": ["Holz", "Mais", "Metalle", "Färbemittel", "Backwaren"]
+  },
+  {
+    "city": "Campeche",
+    "waren": ["Holz", "Ziegel", "Mais", "Kaffee", "Fleisch"]
+  },
+  {
+    "city": "Cancun",
+    "waren": ["Mais", "Zucker", "Metalle", "Kaffee", "Fleisch"]
+  },
+  {
+    "city": "Caracas",
+    "waren": ["Ziegel", "Weizen", "Zucker", "Werkzeug", "Kakao"]
+  },
+  {
+    "city": "Cartagena",
+    "waren": ["Holz", "Zucker", "Metalle", "Kaffee", "Fleisch"]
+  },
+  {
+    "city": "Cat Island",
+    "waren": ["Früchte", "Hanf", "Tuch", "Tabak", "Rum"]
+  },
+  {
+    "city": "Charles Towne",
+    "waren": ["Früchte", "Mais", "Metalle", "Tabak", "Rum"]
+  },
+  {
+    "city": "Charleston",
+    "waren": ["Holz", "Ziegel", "Tuch", "Färbemittel", "Fleisch"]
+  },
+  {
+    "city": "Coro",
+    "waren": ["Ziegel","Weizen","Baumwolle","Kakao","Kleidung"]
+  },
+  {
+    "city": "Corpus Christi",
+    "waren": ["Holz","Weizen","Metalle","Färbemittel","Kleidung"]
+  },
+  {
+    "city": "Caracao",
+    "waren": ["Holz","Ziegel","Mais","Kakao","Fleisch"]
+  },
+  {
+    "city": "Eleuthera",
+    "waren": ["Früchte","Hanf","Tuch","Tabak","Seil"]
+  },
+  {
+    "city": "Evangelista",
+    "waren": ["Früchte","Hanf","Tuch","Tabak","Seil"]
+  },
+  {
+    "city": "Florida Keys",
+    "waren": ["Ziegel","Früchte","Mais","Werkzeug","Färbemittel"]
+  },
+  {
+    "city": "Fort Caroline",
+    "waren": ["Ziegel","Tuch","Baumwolle","Färbemittel","Fleisch"]
+  },
+  {
+    "city": "Georgetown",
+    "waren": ["Holz","Ziegel","Weizen","Werkzeug","Kakao"]
+  },
+  {
+    "city": "Gibara",
+    "waren": ["Weizen","Metalle","Baumwolle","Tabak","Backwaren"]
+  },
+  {
+    "city": "Gibraltar",
+    "waren": ["Holz","Weizen","Hanf","Kaffee","Kleidung"]
+  },
+  {
+    "city": "Grand Bahama",
+    "waren": ["Ziegel","Früchte","Mais","Tabak","Rum"]
+  },
+  {
+    "city": "Grenada",
+    "waren": ["Früchte","Mais","Hanf","Kakao","Seil"]
+  },
+  {
+    "city": "Guadeloupe",
+    "waren": ["Ziegel","Früchte","Mais","Kakao","Backwaren"]
+  },
+  {
+    "city": "Havanna",
+    "waren": ["Ziegel","Weizen","Baumwolle","Tabak","Rum"]
+  },
+  {
+    "city": "Isabella",
+    "waren": ["Holz","Hanf","Tuch","Seil","Tabak"]
+  },
+  {
+    "city": "Maracaibo",
+    "waren": ["Holz","Zucker","Baumwolle","Kaffee","Fleisch"]
+  },
+  {
+    "city": "Margarita",
+    "waren": ["Holz","Weizen","Hanf","Kakao","Backwaren"]
+  },
+  {
+    "city": "Martinique",
+    "waren": ["Weizen","Früchte","Hanf","Werkzeug","Kakao"]
+  },
+  {
+    "city": "Nassau",
+    "waren": ["Früchte","Mais","Baumwolle","Tabak","Backwaren"]
+  },
+  {
+    "city": "New Orleans",
+    "waren": ["Ziegel","Zucker","Tuch","Färbemittel","Backwaren"]
+  },
+  {
+    "city": "Nombre de Dios",
+    "waren": ["Holz","Hanf","Tuch","Tabak","Kleidung"]
+  },
+  {
+    "city": "Pensacola",
+    "waren": ["Tuch","Metalle","Baumwolle","Färbemittel","Backwaren"]
+  },
+  {
+    "city": "Port Royale",
+    "waren": ["Mais","Metalle","Baumwolle","Tabak","Rum"]
+  },
+  {
+    "city": "Port St.Joe",
+    "waren": ["Zucker","Tuch","Metalle","Färbemittel","Backwaren"]
+  },
+  {
+    "city": "Port of Spain",
+    "waren": ["Weizen","Zucker","Hanf","Werkzeug","Kakao"]
+  },
+  {
+    "city": "Port-au-Prince",
+    "waren": ["Ziegel","Zucker","Tuch","Werkzeug","Tabak"]
+  },
+  {
+    "city": "Providence",
+    "waren": ["Tuch","Metalle","Baumwolle","Kaffee","Seil"]
+  },
+  {
+    "city": "Puerto Cabello",
+    "waren": ["Weizen","Metalle","Baumwolle","Kakao","Seil"]
+  },
+  {
+    "city": "Puerto Santo",
+    "waren": ["Holz","Hanf","Tuch","Kakao","Kleidung"]
+  },
+  {
+    "city": "Roatan",
+    "waren": ["Weizen","Zucker","Metalle","Kaffee","Backwaren"]
+  },
+  {
+    "city": "San Juan",
+    "waren": ["Früchte","Hanf","Tuch","Tabak","Rum"]
+  },
+  {
+    "city": "Santa Marta",
+    "waren": ["Mais","Zucker","Hanf","Kakao","Fleisch"]
+  },
+  {
+    "city": "Santiago",
+    "waren": ["Holz","Hanf","Baumwolle","Werkzeug","Tabak"]
+  },
+  {
+    "city": "Santo Domingo",
+    "waren": ["Ziegel","Zucker","Tuch","Tabak","Backwaren"]
+  },
+  {
+    "city": "Sisal",
+    "waren": ["Weizen","Metalle","Baumwolle","Kaffee","Fleisch"]
+  },
+  {
+    "city": "St. Augustine",
+    "waren": ["Ziegel","Weizen","Zucker","Färbemittel","Kleidung"]
+  },
+  {
+    "city": "St. Kitts",
+    "waren": ["Früchte","Mais","Metalle","Kakao","Rum"]
+  },
+  {
+    "city": "St. Lucia",
+    "waren": ["Mais","Metalle","Baumwolle","Kakao","Rum"]
+  },
+  {
+    "city": "St. Martin",
+    "waren": ["Ziegel","Früchte","Mais","Kakao","Rum"]
+  },
+  {
+    "city": "St. Thome",
+    "waren": ["Früchte","Mais","Baumwolle","Tabak","Rum"]
+  },
+  {
+    "city": "Tampa",
+    "waren": ["Holz","Weizen","Metalle","Färbemittel","Kleidung"]
+  },
+  {
+    "city": "Tampico",
+    "waren": ["Holz","Weizen","Zucker","Kaffee","Kleidung"]
+  },
+  {
+    "city": "Tortuga",
+    "waren": ["Zucker","Hanf","Baumwolle","Tabak","Rum"]
+  },
+  {
+    "city": "Trinidad",
+    "waren": ["Holz","Zucker","Tuch","Werkzeug","Tabak"]
+  },
+  {
+    "city": "Turk Islands",
+    "waren": ["Zucker","Hanf","Baumwolle","Tabak","Kleidung"]
+  },
+  {
+    "city": "Vera Cruz",
+    "waren": ["Ziegel","Mais","Baumwolle","Werkzeug","Kaffee"]
+  },
+  {
+    "city": "Villa Hermosa",
+    "waren": ["Weizen","Zucker","Hanf","Kaffee","Fleisch"]
+  }
+]

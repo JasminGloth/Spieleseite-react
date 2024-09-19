@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Pinasse",
+    "bild": "img/PR3/Pinasse.png",
+    "amount": 40,
+    "laderaum": 200,
+    "kaufpreis": 10.000,
+    "knoten": 10,
+    "täglichekosten": 100
+  },
+  {
+    "name": "Handelsfleute",
+    "bild": "img/PR3/Handelsfleute.png",
+    "amount": 40,
+    "laderaum": 800,
+    "kaufpreis": 50.0,
+    "knoten": 10,
+    "täglichekosten": 240
+  },
+  {
+    "name": "Schaluppe",
+    "bild": "img/PR3/Schaluppe.png",
+    "amount": 70,
+    "laderaum": 200,
+    "kaufpreis": 19.0,
+    "knoten": 11,
+    "täglichekosten": 110
+  },
+  {
+    "name": "Brigg",
+    "bild": "img/PR3/Brigg.png",
+    "amount": 80,
+    "laderaum": 250,
+    "kaufpreis": 27.0,
+    "knoten": 11,
+    "täglichekosten": 140
+  },
+  {
+    "name": "Fleute",
+    "bild": "img/PR3/Fleute.png",
+    "amount": 80,
+    "laderaum": 500,
+    "kaufpreis": 40.0,
+    "knoten": 10,
+    "täglichekosten": 220
+  },
+  {
+    "name": "Barke",
+    "bild": "img/PR3/Barke.png",
+    "amount": 100,
+    "laderaum": 250,
+    "kaufpreis": 36.0,
+    "knoten": 12,
+    "täglichekosten": 150
+  },
+  {
+    "name": "Piratenbarke",
+    "bild": "img/PR3/Piratenbarke.png",
+    "amount": 120,
+    "laderaum": 300,
+    "kaufpreis": 36.0,
+    "knoten": 12,
+    "täglichekosten": 180
+  },
+  {
+    "name": "Korvette",
+    "bild": "img/PR3/Korvette.png",
+    "amount": 120,
+    "laderaum": 350,
+    "kaufpreis": 60.0,
+    "knoten": 12,
+    "täglichekosten": 200
+  },
+  {
+    "name": "Fregatte",
+    "bild": "img/PR3/Fregatte.png",
+    "amount": 130,
+    "laderaum": 400,
+    "kaufpreis": 70.0,
+    "knoten": 11,
+    "täglichekosten": 220
+  },
+  {
+    "name": "Militärkorvette",
+    "bild": "img/PR3/Militärkorvette.png",
+    "amount": 160,
+    "laderaum": 300,
+    "kaufpreis": 100.0,
+    "knoten": 11,
+    "täglichekosten": 210
+  },
+  {
+    "name": "Galeone",
+    "bild": "img/PR3/Galeone.png",
+    "amount": 180,
+    "laderaum": 600,
+    "kaufpreis": 120.0,
+    "knoten": 10,
+    "täglichekosten": 280
+  },
+  {
+    "name": "Militärfregatte",
+    "bild": "img/PR3/Militärfregatte.png",
+    "amount": 180,
+    "laderaum": 350,
+    "kaufpreis": 120.0,
+    "knoten": 12,
+    "täglichekosten": 250
+  },
+  {
+    "name": "Karavelle",
+    "bild": "img/PR3/Karavelle.png",
+    "amount": 200,
+    "laderaum": 500,
+    "kaufpreis": 160.0,
+    "knoten": 11,
+    "täglichekosten": 300
+  },
+  {
+    "name": "Karacke",
+    "bild": "img/PR3/Karacke.png",
+    "amount": 200,
+    "laderaum": 550,
+    "kaufpreis": 140.0,
+    "knoten": 12,
+    "täglichekosten": 320
+  },
+  {
+    "name": "Kriegsgaleone",
+    "bild": "img/PR3/Kriegsgaleone.png",
+    "amount": 230,
+    "laderaum": 400,
+    "kaufpreis": 180.0,
+    "knoten": 13,
+    "täglichekosten": 320
+  },
+  {
+    "name": "Liner",
+    "bild": "img/PR3/Liner.png",
+    "amount": 250,
+    "laderaum": 400,
+    "kaufpreis": 200.0,
+    "knoten": 14,
+    "täglichekosten": 340
+  }
+]
