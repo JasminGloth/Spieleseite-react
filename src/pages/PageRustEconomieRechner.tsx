@@ -37,9 +37,9 @@ export const PageRustEconomieRechner: React.FC = () => {
 
     return (
         <div className="page pageRustEconomieRechner">
-            <h1>Coin/Scrap Rechner</h1>
-            <h2 style={{marginBottom:"10px"}}>Gesamt Einkaufspreis: {totals.einkaufsGesamt.toFixed(2)} Coins/Scrap</h2>
-            <h2>Gesamt Verkaufspreis: {totals.verkaufsGesamt.toFixed(2)} Coins/Scrap</h2>
+            <h1>Coin Rechner</h1>
+            <h2 style={{marginBottom:"10px"}}>Gesamt Einkaufspreis: {totals.einkaufsGesamt.toFixed(2)} Coins</h2>
+            <h2>Gesamt Verkaufspreis: {totals.verkaufsGesamt.toFixed(2)} Coins</h2>
             <button onClick={clearFields} style={{ marginTop: '20px', marginBottom: '30px' }}>Felder leeren</button>
             <h2>Rohstoffe</h2>
             <form style={{ display: 'flex', flexWrap: 'wrap' }}>

@@ -49,8 +49,7 @@ function App() {
 							Rust
 						</a>
 						<div className='dropdown-content'>
-							<NavLink to="/rusteconomierechner">Economierechner</NavLink>
-							<NavLink to="/rustconfigeditor">Config Editor</NavLink>
+							<NavLink to="/rusteconomierechner">Coin Rechner</NavLink>
 						</div>
 					</li>
 				</ul>
