@@ -111,5 +111,11 @@
         "einkaufspreis": 138,
         "verkaufspreis": 276,
         "bild":"/img/Rust/cctv.camera.png"
+    },
+    {
+        "name": "Zielcomputer",
+        "einkaufspreis": 136,
+        "verkaufspreis": 273,
+        "bild":"/img/Rust/targeting.cpmputer.png"
     }
 ]
