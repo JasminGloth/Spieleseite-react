@@ -6,6 +6,12 @@
         "bild":"/img/Rust/lowgradefuel.png"
     },
     {
+        "name": "Schießpulver",
+        "einkaufspreis": 0.14,
+        "verkaufspreis": 0.28,
+        "bild":"/img/Rust/gunpowder.png"
+    },
+    {
         "name": "Sprengstoff",
         "einkaufspreis": 146.75,
         "verkaufspreis": 293.5,
@@ -99,5 +105,11 @@
         "einkaufspreis": 36,
         "verkaufspreis": 72,
         "bild":"/img/Rust/smgbody.png"
+    },
+    {
+        "name": "Überwachungskamera",
+        "einkaufspreis": 138,
+        "verkaufspreis": 276,
+        "bild":"/img/Rust/cctv.camera.png"
     }
 ]
