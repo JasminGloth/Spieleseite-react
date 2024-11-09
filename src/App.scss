@@ -183,4 +183,33 @@ body {
 			grid-template-columns: repeat(3, 1fr);
 		}
 	}
+	.pageRustConfigEditor {
+		.dropzone{
+			height: 100px;
+			width: 300px;
+			text-align: center;
+			border: silver 5px solid;
+		}
+		.form {
+			label {
+				padding: 5px;
+				display: inline-block;
+				min-width: 400px;
+			}
+			span {
+				padding-right: 10px;
+			}
+			input[type=radio]{
+				margin-right: 10px;
+			}
+			input[type=text]{
+				max-width: 100px;
+				text-align: center;
+			}
+			input[type=number]{
+				max-width: 80px;
+				text-align: center;
+			}
+		}
+	}
 }

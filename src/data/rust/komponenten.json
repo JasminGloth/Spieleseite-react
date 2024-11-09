@@ -1,0 +1,103 @@
+[
+    {
+        "name": "Einfacher Kraftstoff",
+        "einkaufspreis": 0.25,
+        "verkaufspreis": 0.50,
+        "bild":"/img/Rust/lowgradefuel.png"
+    },
+    {
+        "name": "Sprengstoff",
+        "einkaufspreis": 146.75,
+        "verkaufspreis": 293.5,
+        "bild":"/img/Rust/explosives.png"
+    },
+    {
+        "name": "Metallrohr",
+        "einkaufspreis": 14,
+        "verkaufspreis": 28,
+        "bild":"/img/Rust/metalpipe.png"
+    },
+    {
+        "name": "Sicherung",
+        "einkaufspreis": 40,
+        "verkaufspreis": 80,
+        "bild":"/img/Rust/fuse.png"
+    },
+    {
+        "name": "Zahnräder",
+        "einkaufspreis": 21.25,
+        "verkaufspreis": 42.5,
+        "bild":"/img/Rust/gears.png"
+    },
+    {
+        "name": "Metallklinge",
+        "einkaufspreis": 5.5,
+        "verkaufspreis": 11,
+        "bild":"/img/Rust/metalblade.png"
+    },
+    {
+        "name": "Leerer Propangas Tank",
+        "einkaufspreis": 7,
+        "verkaufspreis": 14,
+        "bild":"/img/Rust/propanetank.png"
+    },
+    {
+        "name": "Verkehrsschilder",
+        "einkaufspreis": 14,
+        "verkaufspreis": 28,
+        "bild":"/img/Rust/roadsigns.png"
+    },{
+        "name": "Seil",
+        "einkaufspreis": 0.3,
+        "verkaufspreis": 0.6,
+        "bild":"/img/Rust/rope.png"
+    },
+    {
+        "name": "Nähzeug Set",
+        "einkaufspreis": 1.1,
+        "verkaufspreis": 2.2,
+        "bild":"/img/Rust/sewingkit.png"
+    },
+    {
+        "name": "Blech",
+        "einkaufspreis": 30,
+        "verkaufspreis": 60,
+        "bild":"/img/Rust/sheetmetal.png"
+    },
+    {
+        "name": "Metallfeder",
+        "einkaufspreis": 24,
+        "verkaufspreis": 48,
+        "bild":"/img/Rust/metalspring.png"
+    },
+    {
+        "name": "Plane",
+        "einkaufspreis": 1,
+        "verkaufspreis": 2,
+        "bild":"/img/Rust/tarp.png"
+    },
+    {
+        "name": "Technikschrott",
+        "einkaufspreis": 44,
+        "verkaufspreis": 88,
+        "bild":"/img/Rust/techparts.png"
+    },
+    {
+        "name": "Gewehrgehäuse",
+        "einkaufspreis": 56,
+        "verkaufspreis": 112,
+        "bild":"/img/Rust/riflebody.png"
+    },
+    {
+        "name": "Halbautomatisches Gehäuse",
+        "einkaufspreis": 43.5,
+        "verkaufspreis": 87,
+        "bild":"/img/Rust/semibody.png"
+    },
+    {
+        "name": "SMG Gehäuse",
+        "einkaufspreis": 36,
+        "verkaufspreis": 72,
+        "bild":"/img/Rust/smgbody.png"
+    }
+]

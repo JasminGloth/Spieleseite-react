@@ -64,11 +64,5 @@
         "einkaufspreis": 0.01,
         "verkaufspreis": 0.02,
         "bild":"/img/Rust/bone.fragments.png"
-    },
-    {
-        "name": "Einfacher Kraftstoff",
-        "einkaufspreis": 0.25,
-        "verkaufspreis": 0.50,
-        "bild":"/img/Rust/lowgradefuel.png"
-    }
+    }    
 ]

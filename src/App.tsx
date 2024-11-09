@@ -8,6 +8,7 @@ import { PageAboutPR3 } from './pages/PageAboutPR3';
 import { PageBedarfsrechnerP4 } from './pages/PageBedarfsrechnerP4';
 import { PageBedarfsrechnerPR3Model } from './pages/PageBedarfsrechnerPR3Model';
 import { PageRustEconomieRechner } from './pages/PageRustEconomieRechner';
+import { PageRustConfigEditor } from './pages/PageRustConfigEditor';
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
 						</a>
 						<div className='dropdown-content'>
 							<NavLink to="/rusteconomierechner">Economierechner</NavLink>
+							<NavLink to="/rustconfigeditor">Config Editor</NavLink>
 						</div>
 					</li>
 				</ul>
@@ -72,6 +74,7 @@ function App() {
 					element={<PageBedarfsrechnerP4 />}
 				/>
 				<Route path='/rusteconomierechner' element={<PageRustEconomieRechner/>} />
+				<Route path="/rustconfigeditor" element={<PageRustConfigEditor/>} />
 				<Route
 					path="/"
 					element={<Navigate to="/preislistePR3" replace />}

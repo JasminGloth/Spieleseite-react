@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import preise from "../data/rust/preise.json";
+import rohstoffe from "../data/rust/rohstoffe.json";
+import komponenten from "../data/rust/komponenten.json";
+import nahrung from "../data/rust/nahrung.json"
 
 interface PreisItem {
     name: string;
@@ -19,7 +21,7 @@ export const PageRustEconomieRechner: React.FC = () => {
     };
 
     const calculateTotalPrice = (): { einkaufsGesamt: number; verkaufsGesamt: number } => {
-        return preise.reduce((totals, item: PreisItem) => {
+        return [...rohstoffe, ...komponenten, ...nahrung].reduce((totals, item: PreisItem) => {
             const quantity = values[item.name] ? parseFloat(values[item.name]) : 0;
             totals.einkaufsGesamt += quantity * item.einkaufspreis;
             totals.verkaufsGesamt += quantity * item.verkaufspreis;
@@ -35,30 +37,74 @@ export const PageRustEconomieRechner: React.FC = () => {
 
     return (
         <div className="page pageRustEconomieRechner">
-            <h1>Rust Ökonomie Rechner</h1>
-            <form>
-                {preise.map((item: PreisItem) => (
+            <h1>Coin/Scrap Rechner</h1>
+            <h2 style={{marginBottom:"10px"}}>Gesamt Einkaufspreis: {totals.einkaufsGesamt.toFixed(2)} Coins/Scrap</h2>
+            <h2>Gesamt Verkaufspreis: {totals.verkaufsGesamt.toFixed(2)} Coins/Scrap</h2>
+            <button onClick={clearFields} style={{ marginTop: '20px', marginBottom: '30px' }}>Felder leeren</button>
+            <h2>Rohstoffe</h2>
+            <form style={{ display: 'flex', flexWrap: 'wrap' }}>
+                {rohstoffe.map((item: PreisItem) => (
                     <div key={item.name} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                        <img 
+                        <img
                             src={item.bild} // Verwende den direkten Pfad zur Bilddatei
-                            alt={item.name} 
-                            style={{ width: '30px', height: '30px', marginRight: '10px' }} 
+                            alt={item.name}
+                            style={{ width: '30px', height: '30px', marginRight: '10px' }}
                         />
-                        <input 
-                            type="number" 
-                            min="0" 
-                            step="any" 
-                            placeholder={`Menge ${item.name}`} 
-                            value={values[item.name] || ''} 
-                            onChange={(e) => handleChange(item.name, e.target.value)} 
-                            style={{ marginRight: '10px' }} 
+                        <input
+                            type="number"
+                            min="0"
+                            step="any"
+                            placeholder={`${item.name}`}
+                            value={values[item.name] || ''}
+                            onChange={(e) => handleChange(item.name, e.target.value)}
+                            style={{ marginRight: '10px' }}
                         />
                     </div>
                 ))}
             </form>
-            <h2>Gesamt Einkaufspreis: {totals.einkaufsGesamt.toFixed(2)} Coins</h2>
-            <h2>Gesamt Verkaufspreis: {totals.verkaufsGesamt.toFixed(2)} Coins</h2>
-            <button onClick={clearFields} style={{ marginTop: '20px' }}>Felder leeren</button>
+            <h2 style={{ marginTop: "50px" }}>Komponenten</h2>
+            <form style={{ display: 'flex', flexWrap: 'wrap' }}>
+                {komponenten.map((item: PreisItem) => (
+                    <div key={item.name} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                        <img
+                            src={item.bild} // Verwende den direkten Pfad zur Bilddatei
+                            alt={item.name}
+                            style={{ width: '30px', height: '30px', marginRight: '10px' }}
+                        />
+                        <input
+                            type="number"
+                            min="0"
+                            step="any"
+                            placeholder={`${item.name}`}
+                            value={values[item.name] || ''}
+                            onChange={(e) => handleChange(item.name, e.target.value)}
+                            style={{ marginRight: '10px' }}
+                        />
+                    </div>
+                ))}
+            </form>
+            <h2 style={{ marginTop: "50px" }}>Nahrung</h2>
+            <form style={{ display: 'flex', flexWrap: 'wrap' }}>
+                {nahrung.map((item: PreisItem) => (
+                    <div key={item.name} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                        <img
+                            src={item.bild} // Verwende den direkten Pfad zur Bilddatei
+                            alt={item.name}
+                            style={{ width: '30px', height: '30px', marginRight: '10px' }}
+                        />
+                        <input
+                            type="number"
+                            min="0"
+                            step="any"
+                            placeholder={`${item.name}`}
+                            value={values[item.name] || ''}
+                            onChange={(e) => handleChange(item.name, e.target.value)}
+                            style={{ marginRight: '10px' }}
+                        />
+                    </div>
+                ))}
+            </form>
+
         </div>
     );
 };

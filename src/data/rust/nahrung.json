@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Blaue Beere",
+        "einkaufspreis": 0.50,
+        "verkaufspreis": 1.00,
+        "bild":"/img/Rust/blue.berry.png"
+    },
+    {
+        "name": "Rote Beere",
+        "einkaufspreis": 0.50,
+        "verkaufspreis": 1.00,
+        "bild":"/img/Rust/red.berry.png"
+    },
+    {
+        "name": "Gelbe Beere",
+        "einkaufspreis": 0.50,
+        "verkaufspreis": 1.00,
+        "bild":"/img/Rust/yellow.berry.png"
+    },
+    {
+        "name": "Weiße Beere",
+        "einkaufspreis": 0.50,
+        "verkaufspreis": 1.00,
+        "bild":"/img/Rust/white.berry.png"
+    }
+]
