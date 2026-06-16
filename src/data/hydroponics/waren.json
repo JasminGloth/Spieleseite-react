@@ -1,0 +1,275 @@
+[
+    {
+        "gruppe": "pflanzen",
+        "name": "Römersalat",
+        "normalpreis": 5,
+        "besonderer preis": 10,
+        "bild": "/img/Hydroponics/Römersalat.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Spinat",
+        "normalpreis": 6,
+        "besonderer preis": 12,
+        "bild": "/img/Hydroponics/Spinat.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Grünkohl",
+        "normalpreis": 6,
+        "besonderer preis": 12,
+        "bild": "/img/Hydroponics/Grünkohl.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Rucola",
+        "normalpreis": 8,
+        "besonderer preis": 16,
+        "bild": "/img/Hydroponics/Rucola.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Minze",
+        "normalpreis": 5,
+        "besonderer preis": 10,
+        "bild": "/img/Hydroponics/Minze.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Basilikum",
+        "normalpreis": 6,
+        "besonderer preis": 12,
+        "bild": "/img/Hydroponics/Basilikum.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Kopfsalat",
+        "normalpreis": 5,
+        "besonderer preis": 10,
+        "bild": "/img/Hydroponics/Kopfsalat.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Eisbergsalat",
+        "normalpreis": 4,
+        "besonderer preis": 8,
+        "bild": "/img/Hydroponics/Eisbergsalat.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Eichblattsalat",
+        "normalpreis": 5,
+        "besonderer preis": 10,
+        "bild": "/img/Hydroponics/Eichblattsalat.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Tomate",
+        "normalpreis": 5,
+        "besonderer preis": 10,
+        "bild": "/img/Hydroponics/Tomate.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Schnittlauch",
+        "normalpreis": 4,
+        "besonderer preis": 8,
+        "bild": "/img/Hydroponics/Schnittlauch.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Kohl",
+        "normalpreis": 4,
+        "besonderer preis": 8,
+        "bild": "/img/Hydroponics/Kohl.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Pak Choi",
+        "normalpreis": 5,
+        "besonderer preis": 10,
+        "bild": "/img/Hydroponics/PakChoi.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Gurke",
+        "normalpreis": 3,
+        "besonderer preis": 6,
+        "bild": "/img/Hydroponics/Gurke.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Paprika",
+        "normalpreis": 56,
+        "besonderer preis": 112,
+        "bild": "/img/Hydroponics/Paprika.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Erdbeere",
+        "normalpreis": 112,
+        "besonderer preis": 224,
+        "bild": "/img/Hydroponics/Erdbeere.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Regenbogen-Chili",
+        "normalpreis": 162,
+        "besonderer preis": 324,
+        "bild": "/img/Hydroponics/Regenbogen-Chili.png"
+    },
+    {
+        "gruppe": "pflanzen",
+        "name": "Safran",
+        "normalpreis": 232,
+        "besonderer preis": 464,
+        "bild": "/img/Hydroponics/Safran.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Tilapia",
+        "normalpreis": 15,
+        "besonderer preis": 30,
+        "bild": "/img/Hydroponics/Tilapia.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Pangasius",
+        "normalpreis": 12,
+        "besonderer preis": 24,
+        "bild": "/img/Hydroponics/Pangasius.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Blauflossenbarsch",
+        "normalpreis": 20,
+        "besonderer preis": 40,
+        "bild": "/img/Hydroponics/Blauflossenbarsch.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Barramundi",
+        "normalpreis": 25,
+        "besonderer preis": 50,
+        "bild": "/img/Hydroponics/Barramundi.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Silberbarsch",
+        "normalpreis": 15,
+        "besonderer preis": 30,
+        "bild": "/img/Hydroponics/Silberbarsch.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Großmaulbarsch",
+        "normalpreis": 15,
+        "besonderer preis": 30,
+        "bild": "/img/Hydroponics/Großmaulbarsch.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Eurasischer Karpfen",
+        "normalpreis": 10,
+        "besonderer preis": 20,
+        "bild": "/img/Hydroponics/EurasischerKarpfen.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Afrikanischer Raubwels",
+        "normalpreis": 20,
+        "besonderer preis": 40,
+        "bild": "/img/Hydroponics/AfrikanischerRaubwels.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Gelbbarsch",
+        "normalpreis": 15,
+        "besonderer preis": 30,
+        "bild": "/img/Hydroponics/Gelbbarsch.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Rotbauch-Pacu",
+        "normalpreis": 30,
+        "besonderer preis": 60,
+        "bild": "/img/Hydroponics/Rotbauch-Pacu.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Murray-Dorsch",
+        "normalpreis": 25,
+        "besonderer preis": 50,
+        "bild": "/img/Hydroponics/Murray-Dorsch.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Roter Tilapia",
+        "normalpreis": 225,
+        "besonderer preis": 450,
+        "bild": "/img/Hydroponics/RoterTilapia.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Diskus",
+        "normalpreis": 280,
+        "besonderer preis": 560,
+        "bild": "/img/Hydroponics/Diskus.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Kohaku-Koi",
+        "normalpreis": 350,
+        "besonderer preis": 700,
+        "bild": "/img/Hydroponics/Kohaku-Koi.png"
+    },
+    {
+        "gruppe": "fische",
+        "name": "Arowana",
+        "normalpreis": 400,
+        "besonderer preis": 800,
+        "bild": "/img/Hydroponics/Arowana.png"
+    },
+    {
+        "gruppe": "produkte",
+        "name": "Grüner Salat",
+        "normalpreis": 80,
+        "besonderer preis": 160,
+        "bild": "/img/Hydroponics/GrünerSalat.png"
+    },
+    {
+        "gruppe": "produkte",
+        "name": "Fischsuppe",
+        "normalpreis": 150,
+        "besonderer preis": 300,
+        "bild": "/img/Hydroponics/Fischsuppe.png"
+    },
+    {
+        "gruppe": "produkte",
+        "name": "Gemüse-Smoothie",
+        "normalpreis": 100,
+        "besonderer preis": 200,
+        "bild": "/img/Hydroponics/Gemüse-Smoothie.png"
+    },
+    {
+        "gruppe": "produkte",
+        "name": "Gewürzgurkenglas",
+        "normalpreis": 120,
+        "besonderer preis": 240,
+        "bild": "/img/Hydroponics/Gewürzgurkenglas.png"
+    },
+    {
+        "gruppe": "produkte",
+        "name": "Gebratener Fisch",
+        "normalpreis": 150,
+        "besonderer preis": 300,
+        "bild": "/img/Hydroponics/GebratenerFisch.png"
+    },
+    {
+        "gruppe": "produkte",
+        "name": "Gemüsesnack",
+        "normalpreis": 90,
+        "besonderer preis": 180,
+        "bild": "/img/Hydroponics/Gemüsesnack.png"
+    }
+]
