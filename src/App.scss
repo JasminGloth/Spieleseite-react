@@ -103,6 +103,7 @@ body {
 
 
 	.pageBedarfsrechnerPR3,
+	.pageWarenrechnerHydro,
 	.pagePreislistePR3 {
 		color: #87cefa;
 
@@ -145,8 +146,22 @@ body {
 			}
 		}
 
+		.waren-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+			gap: 1rem;
+		}
+
+		.waren-card {
+			border: 1px solid #87cefa;
+			border-radius: 8px;
+			padding: 1rem;
+			text-align: center;
+		}
+
 		#tage,
-		#bewohneranzahl {
+		#bewohneranzahl,
+		#prozent {
 			width: 15vw;
 
 			& :focus {
@@ -177,36 +192,43 @@ body {
 			opacity: 1;
 		}
 	}
+
 	.pageSchiffePR3 {
-		.shipgrid{
+		.shipgrid {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 		}
 	}
+
 	.pageRustConfigEditor {
-		.dropzone{
+		.dropzone {
 			height: 100px;
 			width: 300px;
 			text-align: center;
 			border: silver 5px solid;
 		}
+
 		.form {
 			label {
 				padding: 5px;
 				display: inline-block;
 				min-width: 400px;
 			}
+
 			span {
 				padding-right: 10px;
 			}
-			input[type=radio]{
+
+			input[type=radio] {
 				margin-right: 10px;
 			}
-			input[type=text]{
+
+			input[type=text] {
 				max-width: 100px;
 				text-align: center;
 			}
-			input[type=number]{
+
+			input[type=number] {
 				max-width: 80px;
 				text-align: center;
 			}

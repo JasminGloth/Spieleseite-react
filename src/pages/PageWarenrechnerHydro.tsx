@@ -1,7 +1,7 @@
-import { waren } from '../data/hydroponics/waren.json'
+import waren from '../data/hydroponics/waren.json'
 import { useState } from "react";
 
-export const PageWarenrechnerHydro =() => {
+export const PageWarenrechnerHydro = () => {
     const [prozent, setProzent] = useState(0);
 
     const handleProzentChange = (e: React.ChangeEvent) => {
@@ -11,35 +11,155 @@ export const PageWarenrechnerHydro =() => {
         }
     }
 
+
+
     const data = waren.map((ware) => {
-        const normal = Math.round(prozent * ware.normalpreis);
-        const besonderer = Math.round(prozent * ware.besondererPreis);
-        return { name: ware.name, normal, besonderer}
+        const faktor = 1 + prozent / 100;
+        const normal = Math.round(ware.normalpreis * faktor);
+        const besonderer = Math.round(ware.besondererPreis * faktor);
+        return { gruppe: ware.gruppe, name: ware.name, normal, besonderer, bild: ware.bild }
     });
 
-    const handleClear= () => {
+    const pflanzen = data.filter(
+        (ware) => ware.gruppe === "pflanzen"
+    );
+
+    const fische = data.filter(
+        (ware) => ware.gruppe === "fische"
+    );
+
+    const produkte = data.filter(
+        (ware) => ware.gruppe === "produkte"
+    );
+
+    const renderTable = (
+        title: string,
+        items: typeof data
+    ) => (
+        <section>
+            <h3>{title}</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bild</th>
+                        <th>Ware</th>
+                        <th>Normal</th>
+                        <th>Besonders</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {items.map((ware) => (
+                        <tr key={ware.name}>
+                            <td>
+                                <img
+                                    src={ware.bild}
+                                    alt={ware.name}
+                                    width="32"
+                                />
+                            </td>
+
+                            <td>{ware.name}</td>
+                            <td>{ware.normal}</td>
+                            <td>{ware.besonderer}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </section>
+    );
+
+    { renderTable("Pflanzen", pflanzen) }
+    { renderTable("Fische", fische) }
+    { renderTable("Produkte", produkte) }
+
+    const handleClear = () => {
         setProzent(0)
     }
     return (
-    <div className='page pageWarenrechnerHydro'>
-        <h2 className='überschrift'>Preisrechner</h2>
+        <div className='page pageWarenrechnerHydro'>
+            <h2 className='überschrift'>Preisrechner</h2>
 
-        <div>
-            <form>
-                Preisbonus
-                <input
-                type="text"
-                placeholder='0'
-                id= "prozent"
-                value={prozent}
-                onChange={(e) => handleProzentChange(e)}
+            <div>
+                <form>
+                    Preisbonus
+                    <input
+                        type="text"
+                        placeholder='0'
+                        id="prozent"
+                        value={prozent}
+                        onChange={(e) => handleProzentChange(e)}
+                    />
+                    %
+                    <button onClick={() => handleClear()}>zurück setzen</button>
+                </form>
+
+                <div>
+
+                    <section>
+                        <h3>Pflanzen</h3>
+
+                        <div className="waren-grid">
+                            {pflanzen.map((ware) => (
+                                <div className="waren-card" key={ware.name}>
+                                    <img
+                                        src={ware.bild}
+                                        alt={ware.name}
+                                    />
+
+                                    <h4>{ware.name}</h4>
+
+                                    <div>Normal: {ware.normal} $</div>
+                                    <div>Besonders: {ware.besonderer} $</div>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+
+                    <section>
+    <h3>Fische</h3>
+
+    <div className="waren-grid">
+        {fische.map((ware) => (
+            <div className="waren-card" key={ware.name}>
+                <img
+                    src={ware.bild}
+                    alt={ware.name}
                 />
-                %
-                <button onClick={() => handleClear()}>zurück setzen</button>
-            </form>
 
-            
-        </div>
+                <h4>{ware.name}</h4>
+
+                <div>Normal: {ware.normal} $</div>
+                <div>Besonders: {ware.besonderer} $</div>
+            </div>
+        ))}
     </div>
-);
+</section>
+
+                    <section>
+    <h3>Produkte</h3>
+
+    <div className="waren-grid">
+        {produkte.map((ware) => (
+            <div className="waren-card" key={ware.name}>
+                <img
+                    src={ware.bild}
+                    alt={ware.name}
+                />
+
+                <h4>{ware.name}</h4>
+
+                <div>Normal: {ware.normal} $</div>
+                <div>Besonders: {ware.besonderer} $</div>
+            </div>
+        ))}
+    </div>
+</section>
+
+                </div>
+
+            </div>
+        </div>
+    );
 };
