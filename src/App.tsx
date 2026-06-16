@@ -9,6 +9,7 @@ import { PageBedarfsrechnerP4 } from './pages/PageBedarfsrechnerP4';
 import { PageBedarfsrechnerPR3Model } from './pages/PageBedarfsrechnerPR3Model';
 import { PageRustEconomieRechner } from './pages/PageRustEconomieRechner';
 import { PageRustConfigEditor } from './pages/PageRustConfigEditor';
+import { PageWarenrechnerHydro } from './pages/PageWarenrechnerHydro';
 
 
 function App() {
@@ -52,6 +53,14 @@ function App() {
 							<NavLink to="/rusteconomierechner">Coin Rechner</NavLink>
 						</div>
 					</li>
+					<li className='dropdown'>
+						<a href="#" className='dropbtn'>
+							Hydroponics F&S Sim
+						</a>
+						<div className='dropdown-content'>
+							<NavLink to="/warenrechnerhydro">Warenrechner</NavLink>
+						</div>
+					</li>
 				</ul>
 			</nav>
 
@@ -74,6 +83,10 @@ function App() {
 				/>
 				<Route path='/rusteconomierechner' element={<PageRustEconomieRechner/>} />
 				<Route path="/rustconfigeditor" element={<PageRustConfigEditor/>} />
+				<Route
+					path="/warenrechnerhydro"
+					element={<PageWarenrechnerHydro />}
+				/>
 				<Route
 					path="/"
 					element={<Navigate to="/preislistePR3" replace />}
