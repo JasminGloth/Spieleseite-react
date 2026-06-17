@@ -110,8 +110,8 @@ export const PageWarenrechnerHydro = () => {
 
                                     <h4>{ware.name}</h4>
 
-                                    <div>Normale Qualität: {ware.normal} $</div>
-                                    <div>Besondere Qualität: {ware.besonderer} $</div>
+                                    <div>Normal: {ware.normal} $</div>
+                                    <div>Spezial: {ware.besonderer} $</div>
                                 </div>
                             ))}
                         </div>
@@ -130,8 +130,8 @@ export const PageWarenrechnerHydro = () => {
 
                 <h4>{ware.name}</h4>
 
-                <div>Normale Qualität: {ware.normal} $</div>
-                <div>Besondere Qualität: {ware.besonderer} $</div>
+                <div>Normal: {ware.normal} $</div>
+                <div>Spezial: {ware.besonderer} $</div>
             </div>
         ))}
     </div>
@@ -150,8 +150,8 @@ export const PageWarenrechnerHydro = () => {
 
                 <h4>{ware.name}</h4>
 
-                <div>Normale Qualität: {ware.normal} $</div>
-                <div>Besondere Qualität: {ware.besonderer} $</div>
+                <div>Normal: {ware.normal} $</div>
+                <div>Spezial: {ware.besonderer} $</div>
             </div>
         ))}
     </div>
