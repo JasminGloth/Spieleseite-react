@@ -16,7 +16,7 @@ export const PageWarenrechnerHydro = () => {
     const data = waren.map((ware) => {
         const faktor = 1 + prozent / 100;
         const normal = Math.round(ware.normalpreis * faktor);
-        const besonderer = Math.round(ware.besondererPreis * faktor);
+        const besonderer = Math.round(normal * 2);
         return { gruppe: ware.gruppe, name: ware.name, normal, besonderer, bild: ware.bild }
     });
 
@@ -110,8 +110,8 @@ export const PageWarenrechnerHydro = () => {
 
                                     <h4>{ware.name}</h4>
 
-                                    <div>Normal: {ware.normal} $</div>
-                                    <div>Besonders: {ware.besonderer} $</div>
+                                    <div>Normale Qualität: {ware.normal} $</div>
+                                    <div>Besondere Qualität: {ware.besonderer} $</div>
                                 </div>
                             ))}
                         </div>
@@ -130,8 +130,8 @@ export const PageWarenrechnerHydro = () => {
 
                 <h4>{ware.name}</h4>
 
-                <div>Normal: {ware.normal} $</div>
-                <div>Besonders: {ware.besonderer} $</div>
+                <div>Normale Qualität: {ware.normal} $</div>
+                <div>Besondere Qualität: {ware.besonderer} $</div>
             </div>
         ))}
     </div>
@@ -150,8 +150,8 @@ export const PageWarenrechnerHydro = () => {
 
                 <h4>{ware.name}</h4>
 
-                <div>Normal: {ware.normal} $</div>
-                <div>Besonders: {ware.besonderer} $</div>
+                <div>Normale Qualität: {ware.normal} $</div>
+                <div>Besondere Qualität: {ware.besonderer} $</div>
             </div>
         ))}
     </div>
